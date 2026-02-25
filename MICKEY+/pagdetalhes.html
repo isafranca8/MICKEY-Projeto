@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mickey+ Alladin - Mais Detalhes</title>
+  <link rel="icon" href="detalhes1img/logo_vermelho.png" type="image/x-icon"/>
+  <style>
+    body {
+      margin: 0;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(63, 13, 13);;
+      color: white;
+    }
+
+    .filmeprincipal {
+      position: relative;
+      height: 80vh; 
+      background: url('detalhes1img/alaff.png') no-repeat center top;
+      display: flex;
+      align-items: flex-end; 
+      padding: 20px;
+      background-size: cover; 
+      background-color: black; 
+    }
+    .navbar {
+      display: flex;              
+      justify-content: space-between; 
+      align-items: center;        
+      padding: 15px 30px;
+      background-color: rgba(14, 6, 6, 0.884);     
+      color: rgb(255, 254, 254);
+      position: fixed;            
+      width: 100%;
+      z-index: 1000;              
+    } 
+
+
+    .logo img {
+      height: 60px;  
+    }
+
+
+  .menu a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(231, 208, 102);
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 23px;
+  }
+
+.menu a:hover {
+  color: rgb(148, 32, 28); 
+}
+    .sobreposicao {
+      background: rgba(0, 0, 0, 0.9); 
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 1000px;
+    }
+    .titulo-sugestoes {
+  text-align: center;
+  color: rgb(194, 48, 111);
+  margin: 20px 0;
+  color: rgb(206, 201, 130);
+}
+
+.sugestoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.filme-box {
+  background: rgba(12, 11, 11, 0.8); 
+  border-radius: 10px;
+  overflow: hidden; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.filme-box img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.filme-box:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgb(175, 146, 84); 
+}
+    .botao {
+      display: inline-block;
+      background: #4c5b72;
+      color: rgb(255, 255, 255);
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container{
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    .conteudo{
+        margin-bottom: 40px;
+    }
+    h1{
+        color:rgb(155, 38, 83);
+        font-size: 40px;
+    }
+
+    p {
+        color: white;
+        text-align: justify;
+        margin: 10px 0;
+    }
+    .estilo img{
+        max-width: 450px;
+        display: block;
+        margin:50px auto;
+        }
+    .filmeprincipal p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+ 
+  <div class="logo">
+    <a href="home.html">
+      <img src="detalhes1img/logo_vermelho.png" alt="Logo do Site">
+    </a>
+  </div>
+
+  
+  <div class="menu">
+    <a href="lista.html">Minha Lista</a>
+    <a href="quemestaassindo.html">Perfil</a>
+  
+  </div>
+</nav>
+    </div>
+  <div class="filmeprincipal">
+    <div class="sobreposicao">
+      <h1>Aladdin</h1>
+      <br>
+      <p>1997 • 1h 39min • Animação, Família, Aventura</p>
+      <br>
+      <p>Um jovem humilde descobre uma lâmpada mágica com um gênio que pode conceder desejos. Agora, o rapaz quer conquistar a moça por quem se apaixonou, mas o que ele não sabe é que a jovem é uma princesa que já está comprometida. Com a ajuda do gênio, ele tenta se passar por um príncipe para fisgar o amor da moça e a confiança de seu pai.</p>
+      <button><img src="detalhes1img/botao-play.png" width="25px" height="25px" alt="botão de play"></button>
+      <button><img src="detalhes1img/mais.png" width="25px" height="25px" alt="Botão de adicionar à lista"></button>
+      <button><img src="detalhes1img/claquete.png" width="25px" height="25px" alt="Botão para Trailer"></button>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <h1 class="titulo-sugestoes">SUGESTÕES SEMELHANTES</h1>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="sugestoes">
+  <div class="filme-box">
+    <img src="detalhes1img/pequenacerta.png" alt="A Pequena Sereia Poster">
+  </div>
+  <div class="filme-box">
+    <img src="detalhes1img/leao.png" alt="O Rei Leão Poster">
+  </div>
+  <div class="filme-box">
+    <img src="detalhes1img/mulann.png" alt="Mulan Poster">
+  </div>
+  <div class="filme-box">
+    <img src="detalhes1img/belaverdadeira.png" alt="A Bela e a Fera ">
+  </div>
+</div>
+   
+</body>
+</html>

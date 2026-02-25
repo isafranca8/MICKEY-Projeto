@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mickey+ WandaVision - Mais Detalhes</title>
+  <link rel="icon" href="detalhes1img/logo_vermelho.png" type="image/x-icon"/>
+  <style>
+    body {
+      margin: 0;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(63, 13, 13);;
+      color: white;
+    }
+
+    .filmeprincipal {
+      position: relative;
+      height:92vh; 
+      background: url('serieimg/images2.jpg') no-repeat center top;
+      display: flex;
+      align-items: flex-end; 
+      padding: 20px;
+      background-size: cover; 
+      background-color: black; 
+    }
+    .navbar {
+      display: flex;              
+      justify-content: space-between; 
+      align-items: center;        
+      padding: 15px 30px;
+      background-color: rgba(14, 6, 6, 0.884);     
+      color: rgb(255, 254, 254);
+      position: fixed;            
+      width: 100%;
+      z-index: 1000;              
+    } 
+
+
+    .logo img {
+      height: 60px;  
+    }
+
+  .menu a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(231, 208, 102);
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 23px;
+  }
+.menu a:hover {
+  color: rgb(148, 32, 28); 
+}
+    .sobreposicao {
+      background: rgba(0, 0, 0, 0.9); 
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 1000px;
+    }
+.titulo-sugestoes {
+  text-align: center;
+  color: rgb(194, 48, 111);
+  margin: 20px 0;
+  color: rgb(206, 201, 130);
+ }
+
+.filme-box {
+  background: rgba(12, 11, 11, 0.8); 
+  border-radius: 10px;
+  overflow: hidden; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.filme-box img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.filme-box {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.filme-box:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgb(175, 146, 84); 
+}
+    .botao {
+      display: inline-block;
+      background: #4c5b72;
+      color: rgb(255, 255, 255);
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container{
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    .conteudo{
+        margin-bottom: 40px;
+    }
+    h1{
+        color:rgb(155, 38, 83);
+        font-size: 40px;
+    }
+ .overlay-container {
+      position: relative;
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    .overlay-container img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 0 0 10px 10px;
+    }
+    .container {
+  display:flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 331px;  
+  height: 190px;
+  margin: 10px 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.overlay-container {
+  position: static;
+  width: 100%;  
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  inset: 0;   
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  display: flex;  
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.overlay-text h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card:hover .overlay-text {
+  opacity: 1;
+}
+.overlay-text p {
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  color: white;
+  overflow-wrap: break-word;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.container-musicais {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-musical {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.301); 
+  transition: transform 0.3s;
+  cursor: pointer;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-musical:hover {
+  transform: scale(1.05);
+}
+
+.card-musical img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-musical .card-content {
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.card-content {
+  text-align: flex;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  color: #ff4444;
+  box-shadow: 0 10px 20px rgb(107, 24, 24);
+}
+
+
+.prin h4{
+    margin: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.musicais h4{
+    margin: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.desiny img{
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 5%);
+}
+
+footer {
+  background-color: #222;     
+  color: #fff;                
+  text-align: center;         
+  padding: 20px;              
+  margin-top: 40px;        
+}
+    p {
+        color: white;
+        text-align: left;
+        word-wrap: break-word;
+        overflow: break-word;
+        margin: 10px 0;
+        line-height: 1.4;
+    }
+    .estilo img{
+        max-width: 450px;
+        display: block;
+        margin:50px auto;
+        }
+    .filmeprincipal p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+ 
+  <div class="logo">
+    <a href="home.html">
+      <img src="detalhes1img/logo_vermelho.png" alt="Logo do Site">
+    </a>
+  </div>
+
+  
+  <div class="menu">
+    <a href="lista.html">Minha Lista</a>
+    <a href="quemestaassindo.html">Perfil</a>
+    
+  </div>
+</nav>
+    </div>
+  <div class="filmeprincipal">
+    <div class="sobreposicao">
+      <h1>WandaVision</h1>
+      <br>
+      <p>2021 ‧ Sitcom ‧ 1 temporada</p>
+      <br>
+      <p>Wanda Maximoff e Visão tentam viver uma vida suburbana idílica após os eventos de Vingadores: Ultimato. No entanto, o casal de super-heróis logo percebe que a realidade em que vivem não é o que parece, e as coisas estranhas que acontecem os fazem duvidar do que é real e o que é ficção, enquanto se encontram presos em um universo que emula as sitcoms americanas de diferentes décadas</p>
+      <button><img src="detalhes1img/botao-play.png" width="25px" height="25px"></button>
+      <button><img src="detalhes1img/mais.png" width="25px" height="25px"></button>
+      <button><img src="detalhes1img/claquete.png" width="25px" height="25px"></button>
+    </div>
+  </div>
+<br>
+<br>
+<h2>Episódios</h2>
+
+<div class="overlay-container">
+    <div class="card">
+        <img src="serieimg/wanda1certa.png" alt="Imagem do 1 Episódio">
+        <div class="card-content">
+            <h3>Episódio 1</h3>
+            <div class="overlay-text"><p>Casados recentemente, Wanda Maximoff e o Visão mudam-se para uma pacata cidade chamada Westview</p></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="serieimg/wanda2certo.png" alt="Imagem do 2 Episódio">
+        <div class="card-content">
+            <h3>Episódio 2</h3>
+            <div class="overlay-text"><p>Para se encaixarem, Wanda e Visão realizam um ato mágico em seu show de talentos da comunidade.</p></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="serieimg/wanda3certo.png" alt="Imagem do 3 Episódio">
+        <div class="card-content">
+            <h3>Episódio 3</h3>
+            <div class="overlay-text"><p>A gravidez de Wanda dá uma reviravolta inesperada e a nova amiga Geraldine <br>intervém para ajudá-la.</p></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="serieimg/wanda4certo.png" alt="Imagem do 4 Episódio">
+        <div class="card-content">
+            <h3>Episódio 4</h3>
+            <div class="overlay-text"><p>Monica Rambeau, encarregada de uma <br>missão especial relacionada a armas <br>sensíveis, desaparece.</p></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="serieimg/wanda5certa.png" alt="Imagem do 5 Episódio">
+        <div class="card-content">
+            <h3>Episódio 5</h3>
+            <div class="overlay-text"><p>Wanda aborda as preocupações de Visão quando ele começa a suspeitar do comportamento estranho dos vizinhos.</p></div>
+        </div>
+    </div>
+</div>
+
+   
+</body>
+</html>

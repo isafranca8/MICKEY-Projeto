@@ -1,0 +1,286 @@
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color:rgb(109, 21, 18);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: rgb(43, 41, 37);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+
+        .logo img {
+            height: 55px;
+        }
+
+        a{
+            margin-right: 50px;
+            text-decoration: none;
+            color: rgb(231, 208, 102);
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 23px;
+        }
+
+        a:hover {
+            color: rgb(148, 32, 28); 
+        }
+
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 30px;
+        }
+
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            background-color: #4b4343;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+
+        .search-bar input[type="text"]:focus {
+            background-color: #444;
+        }
+
+
+        header p {
+            margin-right: 100px;
+            cursor: pointer;
+            font-weight: bold;
+            color: rgb(231, 208, 102);
+            transition: color 0.3s;
+            padding: 30;
+        }
+
+
+        header p:hover {
+            color: rgb(148, 32, 28);
+        }
+
+
+
+
+        .img img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            margin-top: 100px;
+            text-align: center;
+        }
+
+
+        .h1 {
+            margin: 40px 0 20px;
+            color: rgb(231, 208, 102);
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+        }
+
+       
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+
+        .catalogo img {
+            width: 220px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        
+        .catalogo img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+
+        /* Estilização básica do container do card */
+        .card {
+            background-color: #1e1e1e;
+            color: #fff;
+            width: 200px; /* Largura fixa (exemplo) */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 12px rgba(247, 237, 96, 0.4);
+            overflow: hidden; /* Importante para a imagem não vazar dos cantos arredondados */
+        }
+
+        /* Estilização da imagem dentro do card */
+        .card-img {
+            width:100%; /* Faz a imagem ocupar 100% da largura do card */
+            height: 300px; /* Altura fixa (exemplo) */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorcer, cortando o excesso */
+        } 
+        .card:hover {
+            transform:translateY(-10px);
+            color: #774343;
+            box-shadow: 0 10px 20px rgb(107, 24, 24);
+        }
+        .card-content {
+            padding: 10px;
+            text-align:center;
+        }
+
+        .card-content h3 {
+            margin: 10px 0 5px;
+            font-size: 15px;
+        }
+
+        .card-content p {
+            font-size: 13 px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: safe;
+            cursor: pointer;
+            gap: 30px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+
+        .fav h3{
+            margin: 30px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 22px;
+        }
+
+         h2{
+            margin: 30px;
+            text-align: center;
+            flex-wrap: wrap;
+            color: rgb(231, 208, 102);
+        }
+
+        .container-filmes {
+            display: flex;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 60px;
+            padding: 20px;
+        }
+
+
+
+        .card-filmes {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.301); 
+            transition: transform 0.3s;
+            cursor: pointer;
+            width: 330px;
+            height: 500px;
+            display: flex;
+            flex-direction:column;
+        }
+
+        .card-filmes:hover {
+            transform: scale(1.05);
+        }
+
+        .card-filmes img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .card-filmes .card-content {
+            padding: 5px;
+            text-align: center;
+            overflow: hidden;
+        }       
+
+        .filmes h4{
+            margin: 30px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .overlay-container {
+            position: relative;
+            width: 300px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .overlay-container img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+    
+
+        .overlay-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            text-align:center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 0 0 10px 10px;
+            font-size: 17px;
+        }
+
+
+
+        .overlay-container:hover .overlay-text {
+            opacity: 1;
+        }
+
+        .galeria-sobreposta {
+           /* 1. Habilita o modo Flexbox (coloca os filhos em linha) */
+            display: flex;
+    /* 2. Centraliza o grupo de imagens na tela */
+            justify-content: center;
+    /* 3. Define um espaçamento entre cada imagem */
+            gap: 30px; 
+    /* 4. Permite que as imagens quebrem para a linha de baixo em telas pequenas */
+            flex-wrap: wrap; 
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #222;     
+            color: #fff;                
+            text-align: center;         
+            padding: 20px;              
+            margin-top: 40px;        
+        }

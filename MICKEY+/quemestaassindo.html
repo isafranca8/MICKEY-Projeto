@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem Está Assistindo?</title>
+  <link rel= "icon" href="img/logo_vermelho.png" type=" image/x-icon" />
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: rgb(109, 21, 18);
+      margin: 0;
+      padding: 0;
+      color: rgb(255, 254, 254);
+      text-align: center;
+      display: flex;            
+      flex-direction: column;       
+      justify-content: center;     
+      align-items: center;   
+      height: 90vh;      
+    }
+
+    h2 {
+      font-size: 60px;
+      margin: 50px 0;
+      color: rgb(231, 208, 102);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: center;
+      padding: 25px;
+      
+    }
+    .perfil{
+      display: center;
+      flex-direction: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.3;
+    }
+    .perfil img{
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      border: 3px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      transition: border 0.3;
+    }
+    .perfil:hover img {
+     border: 3px solid rgb(231, 208, 102);
+     transform: 10%;
+    }
+    .perfil p {
+     font-size: 20px;
+     margin: 0;
+     margin-top: 5px;
+     margin-bottom: 100px;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: rgb(163, 76, 76); 
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 25px;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: rgb(219, 221, 69);
+      color:rgb(5, 5, 5)
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Quem Vai Assistir?</h2>
+
+  <div class = "container">
+    <div class = "perfil">
+        <img src="img sarah/rogerio.jpg" alt="Foto de perfil!">
+        <p><a href="home.html">Rogério</a></p>
+  </div>
+ 
+    <div class = "perfil">
+        <img src="img sarah/mayrarra.webp" alt="Foto de perfil!">
+        <p><a href="home.html">Mayara</a></p>
+    </div>
+  <div class = "perfil">
+        <img src="img sarah/gei2.jpg" alt="Foto de perfil!">
+        <p><a href="home.html">Gleidsson</a></p>
+  
+    </div>
+ <div class = "perfil">
+      <img src="img sarah/MAIS .png" alt="Foto de adicionar perfil!">
+        <p><a href="#">Adicionar perfil</a></p>
+    </div>
+  </div>
+    
+    <a href="#"> Editar Perfil </a>
+</body>
+</html>

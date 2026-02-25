@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mickey+ - Minha Lista</title>
+  <link rel="icon" href="detalhes1img/logo_vermelho.png" type="image/x-icon"/>
+  <style>
+    body {
+      margin: 0;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(63, 13, 13);;
+      color: white;
+    }
+    .navbar {
+      display: flex;              
+      justify-content: space-between;
+      align-items: center;        
+      padding: 15px 30px;
+      background-color: rgba(14, 6, 6, 0.884);    
+      color: rgb(255, 254, 254);
+      position: fixed;    
+      top: 0;
+      left: 0;        
+      width: 100%;
+      z-index: 1000;              
+    }
+     .logo img {
+      height: 60px;  
+    }
+    .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(231, 208, 102);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+
+   .menu a:hover {
+    color: rgb(148, 32, 28);
+   }
+   .titulo {
+  text-align: center;
+  color: rgb(194, 48, 111);
+  margin: 20px 0;
+  padding-top: 80px;
+  color: rgb(206, 201, 130);
+}
+
+
+.minhalista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 160px;
+}
+.card {
+      background: rgba(20, 20, 20, 0.9);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+    }
+    .card img {
+      width: 100%;
+      display: block;
+      height: 550px;
+    }
+    .card-content {
+      padding: 10px;
+      text-align: center;
+       margin-top: auto;
+    }
+    .card-content h3 {
+      font-size: 16px;
+      margin: 10px 0 0;
+      color: rgb(231, 208, 102);
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(153, 32, 32, 0.6);
+    }
+    .play-icon {
+      font-size: 20px;
+      color: white;
+    }
+</style>
+</head>
+<body>
+  <nav class="navbar">
+ 
+  <div class="logo">
+    <img src="detalhes1img/logo_vermelho.png" alt="Logo do Site">
+  </div>
+
+
+ 
+  <div class="menu">
+    <a href="#">Perfil</a>
+  </div>
+</nav>
+  </div>
+
+
+<br>
+<br>
+  <h1 class="titulo">MINHA LISTA</h1>
+<section class="minhalista">
+    <div class="card">
+      <img src="listaimg/ngc.jpg" alt="Frozen Pôster">
+      <div class="card-content">
+        <a href="detalhesfrozen.html">Ver Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="listaimg/aladinreto.png" alt="Aladin Poster">
+      <div class="card-content">
+        <a href="pagdetalhes.html">Ver Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="listaimg/vingg.jpg" alt="Vingadores Guerra Infinita Pôster">
+      <div class="card-content">
+        <a href="#">Ver Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="listaimg/wall.jpg" alt="Wall-E Pôster">
+      <div class="card-content">
+        <a href="#">Ver Detalhes</a>
+      </div>
+    </div>
+  </section>
+  <section class="minhalista">
+    <div class="card">
+      <img src="listaimg/wandd.jpg" alt="WandaVision Pôster">
+      <div class="card-content">
+        <a href="seriedetalhe.html">Ver Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="listaimg/hoeme.jpg" alt="Homem de Ferro pôster">
+      <div class="card-content">
+        <a href="#">Ver Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="detalhes1img/mulann.png" alt="Mulan Poster">
+      <div class="card-content">
+        <a href="#">Ver Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="detalhes1img/belaverdadeira.png" alt="A Bela e a Fera">
+      <div class="card-content">
+        <a href="#">Ver Detalhes</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+   
+</body>
+</html>
